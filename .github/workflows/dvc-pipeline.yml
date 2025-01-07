@@ -29,7 +29,7 @@ jobs:
           DVC_REMOTE_ACCESS_KEY_ID: ${{ secrets.DVC_REMOTE_ACCESS_KEY_ID }}
           DVC_REMOTE_SECRET_ACCESS_KEY: ${{ secrets.DVC_REMOTE_SECRET_ACCESS_KEY }}
         run: |
-          dvc remote add -d myremote s3://mlops2train/data
+          dvc remote add -d myremote s3://mlops-bpa-1/data
           dvc remote modify myremote endpointurl https://storage.yandexcloud.net
           dvc remote modify myremote access_key_id $DVC_REMOTE_ACCESS_KEY_ID
           dvc remote modify myremote secret_access_key $DVC_REMOTE_SECRET_ACCESS_KEY
