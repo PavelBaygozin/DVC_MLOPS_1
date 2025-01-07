@@ -1,0 +1,8 @@
+transformers
+scikit-learn
+pandas
+dvc
+torch
+torchvision
+torchaudio
+
